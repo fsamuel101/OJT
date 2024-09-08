@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@600&family=Roboto+Mono&display=swap');
+
+
+@media only screen and (max-width: 600px){
+
+    .libre-baskerville-regular {
+        font-family: "Libre Baskerville", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .libre-baskerville-bold {
+        font-family: "Libre Baskerville", serif;
+        font-weight: 700;
+        font-style: normal; 
+      }
+      
+      .libre-baskerville-regular-italic {
+        font-family: "Libre Baskerville", serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+      
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    
+    :root {
+        --primary-color: #ffffff;
+        --accent-color: #800015;;
+        --font-main: Arial, Helvetica, sans-serif;
+        --font-top: "Libre Baskerville", serif; 
+    }
+    .g{
+        height: 5px;
+    }
+
+    .brand{
+        display: flex;
+        gap: 1.5em;
+        justify-content: center;
+        padding: 1em, 0,0,0;
+    }
+    .title{
+        font-size: 0.4em;
+        margin: 0;
+    }
+    .contact-details{
+        font-size: 5px;
+    }
+    .photo{
+        height: 20px;
+    }
+
+    .logo-image{
+        height: 5em;
+    }
+
+    .contact-details{
+        flex-direction: column;
+        gap: 0;
+    }
+    .contact-container{
+        gap: 1em;
+    }
+    .margin-1{
+        margin: 0;
+    }
+    .header-main{
+        padding: 1em, 0,0,0;
+    }
+
+    .green-input, .forgot{
+        font-size: 1.5em;
+    }
+    .index-container{
+        position: relative;
+        top: 10%;
+    }
+
+    .body {
+        background-image: url('../images/landingPage2.png');
+        /* Replace with the path to your image */
+    }
+    /* forgot */
+    .d{
+        font-size: 1.2em;
+        margin: 0;
+    }
+    .d-1{
+        font-size: 0.75em;
+    }
+    .green-header>div:nth-child(2) {
+        margin-left: 0;
+        padding:1em;
+    }
+    .h input, button{
+        font-size: 1.5em;
+    }
+
+    .signup-container>div{
+        position: relative;
+        text-align: center;
+        font-size: 0.75em;
+    }
+
+    .signup-container{
+        position: relative;
+        top: 20%;
+    }
+    .f{
+        position: absolute;
+    }
+    .landingpage{
+        flex-direction: column;
+        font-size: 1em;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .history{
+        font-size: 0.75em;
+        margin: 1em;
+        padding: 1em;
+        width: 90%;
+    }
+
+    .welcome-message{
+        font-family: var(--font-main);
+    }
+    .button-41{
+        font-size: 0.75em;
+    }
+    /* .i{
+        position: absolute;
+        top: 50%;
+        z-index: 999;
+    }
+    .relative{
+        position: relative;
+    }*/
+
+    .brand{
+        padding: 0;
+    }
+
+    .hamburger{
+        height: 50px;
+        width: 50px;
+        margin-right: 1em;
+    }
+
+    .center{
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        padding: 0;
+        margin: 0;
+    }
+
+    .title, .center{
+        justify-content: flex-start;
+        align-items: start;
+    }
+    .m{
+        margin: 0;
+        padding: 0;
+    }
+    .h{
+        font-size: 1em;
+    }
+    .library{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0.2em;
+    }
+
+    .menu{
+        display: none;
+    }
+    .serach-container{
+        background-color: white;
+        padding: 0 1em; /* Adjust the padding to your preference */
+        position: relative;
+        height: auto;
+        overflow-y: auto;
+        margin-top: 20px;
+        
+    }
+
+    .search-results{
+        position: relative;
+        height: fit-content;
+        font-size: 1em;
+        border-bottom: 2px solid var(--accent-color);
+    }
+    #search-form{
+        padding: 0;
+    }
+
+    .book-title{
+        font-size: 1em;
+    }
+
+    .book-cover{
+        height: 100px;
+        width: 75px;
+    }
+    .books{
+        height: 20em;
+        width: 12em;
+        padding: 0;
+        margin-top: 1.5em;
+      
+    }
+
+    .book-container{
+        padding: 0;
+        padding-top: 1em;
+        border: none;
+    }
+} 

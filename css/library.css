@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@600&family=Roboto+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #ffffff;
+    --accent-color: #800015;
+    --font-main:Arial, Helvetica, sans-serif;
+    --font-main:Arial, Helvetica, sans-serif;
+}
+
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.hover{
+    color: #800015;
+}
+.hover:hover{
+    background-color: var(--accent-color);
+    color: white;
+}
+.space{
+    line-height: 0;
+}
+
+h1{
+    font-family: var(--font-main);
+}
+
+.green-header {
+    width: 100%;
+    font-family: var(--font-sec);
+    color: var(--accent-color);
+    font-size: 1.2em;
+}
+
+.solidgreen1 {
+    background-color: var(--accent-color);
+    height: 1.5em;
+    width: 100%;
+}
+
+.solidgreen2 {
+    background-color: var(--accent-color);
+    height: 1em;
+    width: 100%;
+}
+
+.admin-title {
+    padding: 0.5em 3em;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    position: relative; /* Add this line to establish a positioning context */
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Position below the parent container */
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for better visibility */
+    z-index: 99;
+}
+
+.dropdown-menu a {
+    color: var(--accent-color);
+    font-style: var(--font-main);
+    text-decoration: none;
+    padding: 10px; /* Add padding for better spacing */
+    display: block; /* Make the links block-level elements */
+    
+}
+
+.show {
+    display: flex;
+}
+/* Basic styling for the hamburger container */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    justify-content: space-between;
+    width: 5em;
+    z-index: 9;
+  }
+  
+  /* Styling for individual lines in the hamburger icon */
+  .hamburger div {
+    width: 100%;
+    height: 15px;
+    background-color: var(--accent-color);/* You can change the color as per your design */
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .hide{
+    display: none;
+  }
+  /* Styling for the menu open state (optional) */
+  .hamburger.active div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .hamburger.active div:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+.library{
+    display: grid;
+    grid-template-columns: 20% 60% 30%;
+    width: 90%;
+    padding: 2em;
+    justify-content: center;
+}
+.categories ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--accent-color);
+    line-height: 1.6;
+    /* font-size: 1em; */
+
+}
+
+.h{
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.categories{
+    position: sticky;
+    top: 0;
+}
+li:hover{
+    background-color: rgb(147, 173, 147);
+}
+
+.categories ul li.active {
+    background-color: var(--accent-color); /* Change the background color to your desired highlight color */
+    border-radius: 4px; /* Add rounded corners for better appearance */
+}
+
+.categories ul li.active a {
+    color: #ffffff; /* Change the text color of the link inside the active li */
+}
+
+li{
+    font-family: Arial, Helvetica, serif;
+    font-size: 1em;
+    
+}
+
+
+ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: var(--accent-color); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between thedropd bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-height: fit-content;
+    padding: 0 2em;
+    
+}
+
+.search-container {
+    background-color: white;
+    padding: 0 1em; /* Adjust the padding to your preference */
+    position: sticky;
+    top: 0;
+    height: auto;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+form {
+    background-color: #fff;
+    padding: 1em; /* Adjust the padding to your preference */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    width: 100%; /* Make the form width 100% */
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    flex: 1; /* Allow the input to take the remaining width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: context-menu;
+    outline: inherit;
+}
+.hamb{
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    background-color: var(--accent-color );
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: context-menu; 
+}
+/* change the value of cursor to context */
+
+.button:hover {
+    background-color: #45a049;
+}
+.books{
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding: 0.5em;
+    font-size: 8px;
+    border-radius: 5px;
+    height: fit-content;
+    overflow: hidden;
+    position: relative;
+    width: 20em;
+    height: 250px;
+
+}
+
+.book-cover{
+    height: 200px;
+    width: 150px;
+}
+
+.books:hover{
+    border: solid 3px var(--accent-color);
+}
+
+h2.book-title{
+    z-index: 999999;
+}
+.book-link{
+    text-decoration: none;
+    color: var(--accent-color);
+    font-family: var(--font-main);
+    text-align: center;
+}
+.books .book-title {
+    max-width: 150px;
+    line-height: 1.5em;
+    /* height: 3em; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+.search-results{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+#search-form{
+    position: sticky;
+    top: 0;
+}
+
+.search-books{
+    width: 100%;
+    font-size: 4px;
+    margin-top: 3em;
+}
+.search-book-cover{
+    height: 100px;
+    width: 75px;
+}
+
+.search-book-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: var(--font-main);
+    color: var(--accent-color);
+    font-size: 3em;
+    gap: 2em;
+    text-decoration: none;
+
+}
+.search-book-link:hover{
+    box-shadow: rgba(38,106,45, 0.3) 0px 30px 60px -12px inset, rgba(14, 108, 6, 0.3) 0px 18px 36px -18px inset;
+}
+
+.hamburger1{
+    display: none;
+}
+.row{
+    display: flex;
+    gap: 8em;
+}
+
+.book-container{
+    border-left: 7px solid var(--accent-color);
+    border-right: 7px solid var(--accent-color);
+}
+/* idikit sa taas */
+
+.m{
+    color: var(--accent-color);
+}
+
+.m1{
+    font-size: 1.35em;
+}
+
+.m2{
+    font-size: 1em;
+}
+.main-font-title {
+    color: var(--accent-color);
+    letter-spacing: 0.05rem;
+    font-size: 1.5em;
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+    background-color: var(--primary-color);
+}
+
+.brand{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    margin: 0.5em 0;
+    padding: 0.1em 3em;
+}
+
+.logo-image {
+    max-width: 100%;
+    max-height: 6rem;
+    height: auto;
+}
+
+.p{
+    display: flex;
+    flex-direction: row;
+}
+.contact-container {
+    display: flex;
+    align-items: center;
+    /* TO reduce the size of this */
+    gap: 0em;                        
+    color: var(--accent-color);
+    margin-top: 5px;
+}
+
+.contact-container p:nth-child(1) {
+    font-weight: bold;
+}
+
+.title, .center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.red1{
+    width: 100%;
+    background-color: var(--accent-color);
+    height: 2em;
+}
+.red2{
+    width: 100%;
+    background-color: var(--accent-color);
+    height: 1.5em;
+}
+
+.red3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--accent-color);
+    height: 1.5em;
+}
